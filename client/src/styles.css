@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Dashboard Layout */
+  .dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 24px;
+    margin-left: 240px;
+    margin-top: 64px;
+  }
+  
+  /* Card Styles */
+  .dashboard-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Table Styles */
+  .table-container {
+    overflow-x: auto;
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Form Styles */
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 16px;
+  }
+  
+  /* Button Styles */
+  .custom-button {
+    text-transform: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+  
+  .primary-button {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: #1976d2;
+    border: 1px solid #1976d2;
+  }
+  
+  /* Alert Styles */
+  .alert {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+  
+  .alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Status Chips */
+  .status-chip {
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-pending {
+    background-color: #fff3e0;
+    color: #e65100;
+  }
+  
+  .status-approved {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .status-rejected {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 960px) {
+    .main-content {
+      margin-left: 0;
+      padding: 16px;
+    }
+  
+    .form-container {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .dashboard-card {
+      padding: 16px;
+    }
+  
+    .table-container {
+      margin-top: 8px;
+    }
+  }
